@@ -14,7 +14,37 @@ $(document).ready(function(){
 });
 
 
-    function slideshow(){
+$(document).ready(function(){
+  $("#Cake").click(function(){
+    $("#Cakepanel").slideToggle(400);
+  });
+});
+ 
+$(document).ready(function(){
+  $("#Order").click(function(){
+    $("#Orderpanel").slideToggle(500);
+  });
+});
+
+$(document).ready(function(){
+  $("#CheckMore").click(function(){
+    $("#CheckMorepannel").slideToggle(500);
+  });
+});
+
+$(document).ready(function(){
+  $("#Booking").click(function(){
+    $("#Bookingpanel").slideToggle(500);
+  });
+});
+
+$(document).ready(function(){
+  $("#Signup").click(function(){
+    $("#Signuppanel").slideToggle(500);
+  });
+});
+
+ /*  function slideshow(){
       var x = document.getElementById('check-class');
       if(x.style.display === "none"){
          x.style.display="block";
@@ -24,5 +54,7 @@ $(document).ready(function(){
     }
     
     }
+    
+*/
 
    

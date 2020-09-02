@@ -35,15 +35,6 @@ max-width: 1180px;
 margin: 0 auto;
 }
 
-/*
-.logo{
-height: 120px;
-width: auto;
-float: left;
-margin-top: 20px;
-
-}
-*/
 
 .logo {
     background-image: url('../images/cupcake1.png');
@@ -196,12 +187,13 @@ border: 1px solid #fff;
 .liststyle li {
     padding: 50px 0px 2px 100px;
     color: #fff;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
-.liststyle li a{
+.liststyle li a {
     color: #fff;
     text-decoration: none;
+    padding: 0px 0px 30px 0px;
 }
 
 .liststyle li a:hover{
@@ -219,7 +211,7 @@ border: 1px solid #fff;
     position: absolute;
     left: 5px;
     cursor: pointer;
-    display: none;
+/*    display: none;*/
 }
 
 #slideclose {
@@ -243,6 +235,129 @@ border: 1px solid #fff;
     color: red;
     transition: color .8s;
 }
+
+#Cakepanel {
+    padding: 5px;
+    width: 115px;
+    position: relative;
+    left: 140px;
+    top: 0px;
+    display: none;
+}
+
+#Cakepanel a {
+    display: block;
+    padding: 1px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#Cakepanel a:hover {
+    color: orange;
+    transition: color .8s;
+    text-decoration: underline;
+    
+}
+
+#Orderpanel {
+    padding: 5px;
+    width: 115px;
+    position: relative;
+    left: 140px;
+    top: 0px;
+    display: none;
+}
+
+#Orderpanel a {
+    display: block;
+    padding: 1px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#Orderpanel a:hover {
+    color: orange;
+    transition: color .8s;
+    text-decoration: underline;
+    
+}
+
+#CheckMorepannel {
+    padding: 5px;
+    width: 115px;
+    position: relative;
+    left: 140px;
+    top: 0px;
+    display: none;
+}
+
+#CheckMorepannel a {
+    display: block;
+    padding: 1px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#CheckMorepannel a:hover {
+    color: orange;
+    transition: color .8s;
+    text-decoration: underline;
+    
+}
+
+#Bookingpanel {
+    padding: 5px;
+    width: 115px;
+    position: relative;
+    left: 140px;
+    top: 0px;
+    display: none;
+}
+
+#Bookingpanel a {
+    display: block;
+    padding: 1px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#Bookingpanel a:hover {
+    color: orange;
+    transition: color .8s;
+    text-decoration: underline;
+    
+}
+
+
+#Signuppanel {
+    padding: 5px;
+    width: 115px;
+    position: relative;
+    left: 140px;
+    top: 0px;
+    display: none;
+}
+
+#Signuppanel a {
+    display: block;
+    padding: 1px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#Signuppanel a:hover {
+    color: orange;
+    transition: color .8s;
+    text-decoration: underline;
+    
+}
+
+
 
 
 .main{
