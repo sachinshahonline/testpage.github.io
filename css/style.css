@@ -13,9 +13,11 @@ background: #000;
 
 }
 
-.container-fluid{
+.container-fluid {
     background: #000!important;
-}    
+    height: 200vh;
+}  
+
 header{
 
 background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('../images/Cake.jpg');
