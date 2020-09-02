@@ -9,11 +9,13 @@ font-size: 20px;
 font-family: 'Flamenco', cursive!important;
 overflow-x: hidden;
 font-weight: bolder;
+background: #000;
 
 }
 
-
-
+.container-fluid{
+    background: #000!important;
+}    
 header{
 
 background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('../images/Cake.jpg');
