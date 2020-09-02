@@ -20,7 +20,7 @@
                     <li><a href="#">check more</a></li>
                     <li><a href="#">sign up</a></li>
                 </ul>
-                    <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i> </a>
+<!--                    <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i> </a>-->
             </div>
         </nav>
         <div class="main-content-header">
@@ -28,21 +28,36 @@
         <a href="#" class="btn btn-full">click to order</a>
         <a href="#" class="btn btn-nav">show me more</a>
         </div>
+        
+        <div id="slideopen">&#9776;</div>
     </header>
     
-    <script>
+    <section class="slidebar">
+          
+        <div id="slideclose"><a href="#">&times;</a></div>
+          
+           <ui class="liststyle">
+               <li><a href=""><i class="fa fa-first-order" aria-hidden="true"></i> Cake Delivery</a></li>
+               <li><a href=""><i class="fa fa-first-order" aria-hidden="true"></i> How to order</a></li>
+               <li><a href=""><i class="fa fa-first-order" aria-hidden="true"></i> Check More</a></li>
+               <li><a href=""><i class="fa fa-first-order" aria-hidden="true"></i> Booking</a></li>
+               <li><a href=""><i class="fa fa-first-order" aria-hidden="true"></i> Sign up</a></li>
+           </ui>
+            
+    </section>
     
-    function slideshow(){
-      var x = document.getElementById('check-class');
-      if(x.style.display === "none"){
-         x.style.display="block";
-    }else{
-        x.style.display="none";
-        
-    }
+    <section class="main">
+        <div class="video">
+            <h4>Welcome</h4>
+        </div>
+    </section>
     
-    }
-    </script>
+    
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
     
 </body>
 </html>

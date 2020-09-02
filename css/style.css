@@ -10,6 +10,8 @@ font-family: 'Flamenco', cursive;
 overflow-x: hidden;
 }
 
+
+
 header{
 
 background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('../images/Cake.jpg');
@@ -175,7 +177,87 @@ border: 1px solid #fff;
     }
 
 
-//////////////////// Responsive
+.slidebar {
+    position: absolute;
+    width: 20rem;
+    /* background: rgb(0,255,0); */
+    background-image: linear-gradient(black,green, black);
+    left: -326px;
+    top: 0;
+    height: 100vh;
+}
+
+.liststyle{
+    list-style: none;
+    color: #fff;
+    
+}
+
+.liststyle li {
+    padding: 50px 0px 2px 100px;
+    color: #fff;
+    padding-top: 80px;
+}
+
+.liststyle li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.liststyle li a:hover{
+    text-decoration: underline;
+    color: orange;
+    transition: color .8s;
+    width: 10px;
+    height: 50px;
+}
+
+#slideopen {
+    position: relative;
+    color: #fff;
+    top: 7px;
+    position: absolute;
+    left: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#slideclose {
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-size: 50px;
+    float: right;
+    /* background: #fff; */
+    width: 50px;
+    top: 13px;
+}
+
+#slideclose a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#slideclose a:hover{
+    opacity: 0.9;
+    color: red;
+    transition: color .8s;
+}
+
+
+.main{
+     position: relative;
+     top: 2rem;
+    left: 5rem;
+}
+
+.main h4 {
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 4rem 38.8rem;
+}
+
+/*Responsive*/
 
 @media only screen and (max-width : 1180px){
     .main-content-header{
@@ -217,6 +299,22 @@ header{
 
 
 @media only screen and (max-width : 768px){
+    
+    #slideopen {
+    position: relative;
+    color: #fff;
+    top: 7px;
+    position: absolute;
+    left: 5px;
+    cursor: pointer;
+    display: block;
+}
+    
+    .slidebar{
+    overflow-y: scroll;
+}
+    
+    
     h1{font-size: 180%}
     
     .main-content-header{
@@ -262,6 +360,10 @@ header{
 }
 
 @media only screen and (max-width : 480px){
+    
+        .slidebar{
+    overflow: hidden;
+}
  
     
     h1{font-size: 100%;}
