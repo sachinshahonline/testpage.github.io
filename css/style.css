@@ -6,8 +6,10 @@ box-sizzing: border-box;
 
 body{
 font-size: 20px;
-font-family: 'Flamenco', cursive;
+font-family: 'Flamenco', cursive!important;
 overflow-x: hidden;
+font-weight: bolder;
+
 }
 
 
@@ -15,7 +17,7 @@ overflow-x: hidden;
 header{
 
 background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('../images/Cake.jpg');
-background-color:green;
+/*background-color:green;*/
 /*opacity: 0.5;*/
 background-size: cover;
 background-repeat: no-repeat;
@@ -37,13 +39,14 @@ margin: 0 auto;
 
 
 .logo {
-    background-image: url('../images/cupcake1.png');
+    background-image: url(../images/cupcake1.png);
     background-size: 100%;
     height: 120px;
     float: left;
     width: 100px;
     margin-top: 20px;
     transition: width 2s;
+    margin-left: 50px;
 }
 
 .logo:hover{
@@ -58,9 +61,11 @@ margin: 0 auto;
 
 
 
-.main-nav{
-    float: right;
-    margin-top: 60px;
+.main-nav {
+    position: relative;
+    float: left;
+    top: -80px;
+    margin-left: 50%;
 }
 
 
@@ -76,24 +81,15 @@ padding: 5px 0px;
 color: aliceblue;
 text-decoration: none;
 text-transform: uppercase;
-font-size: 90%;
-font-weight: 100;
-/*
-background-color: black;
-border-radius: 2px 2px 2px 2px;
-*/
-
+font-size: 100%;
+font-weight: bold;
 }
 
 
 .main-nav li a:hover{
-/*
- border: 3px solid blue;
-border-radius: 10px 10px 10px 10px;
-*/
-    
-background-color: black;
-font-weight: bold;
+    border: 2px solid blue;
+    border-radius: 10px 10px 0px 0px;
+    background: linear-gradient(black,orange);
 }
 
 .main-content-header{
@@ -169,13 +165,14 @@ border: 1px solid #fff;
 
 
 .slidebar {
-    position: absolute;
+    position: fixed;
     width: 20rem;
     /* background: rgb(0,255,0); */
     background-image: linear-gradient(black,green, black);
     left: -326px;
     top: 0;
     height: 100vh;
+    z-index: 9;
 }
 
 .liststyle{
@@ -360,17 +357,32 @@ border: 1px solid #fff;
 
 
 
-.main{
-     position: relative;
-     top: 2rem;
-    left: 5rem;
+.main {
+    position: relative;
+    top: 2rem;
 }
 
 .main h4 {
     font-weight: bold;
     font-size: 5rem;
-    padding: 4rem 38.8rem;
+    padding-top: 4rem;
 }
+
+.main p {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.img_web{
+padding: 20px;
+}
+
+.img_web img {
+    width: 100%;
+    height: 300px;
+    margin-left: 50%;
+}
+
 
 /*Responsive*/
 
@@ -405,13 +417,13 @@ border: 1px solid #fff;
   to {margin-top: 80px;}
 }
         
-}
+
 
 
 header{
  max-height: 100%;   
 }
-
+}
 
 @media only screen and (max-width : 768px){
     
@@ -475,13 +487,7 @@ header{
   
 }
 
-/*
-@media only screen and (max-height : 480px){
-    .slidebar{
-    overflow-y: scroll;
 
-}
-*/
 
 @media only screen and (max-width : 480px){
     

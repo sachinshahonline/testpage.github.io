@@ -10,6 +10,11 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#slideclose").click(function(){
     $(".slidebar").animate({left: '-320px'},700);
+      $("#Cakepanel").slideUp(400);
+      $("#Orderpanel").slideUp(400);
+      $("#CheckMorepannel").slideUp(400);
+      $("#Bookingpanel").slideUp(400);
+      $("#Signuppanel").slideUp(400);
   });
 });
 
